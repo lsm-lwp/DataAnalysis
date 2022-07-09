@@ -1,0 +1,28 @@
+###认识基本的 html 网页结构
+#html定义这是一个网页；head定义最基础的信息如标题；body和div实现整个网页的填充
+<!DOCTYPE html>
+<html>
+<head>标题</head>
+<body>                          #表示主题内容，结构层级上head > body > div > p > span
+<div>电影简介                    #div表示一个数据标签，比如影评项、相关推荐项
+    <img src="http://xx.com" name="电影封面" id="" >   #src是source的缩写，表示路径来源，是html中img标签的必选属性；若看见href，则是文本的必选属性，也表示路径
+</div>
+<div id="features">特色介绍      #这里定义了一个id，那么在body后面就可加script对其进行个性化处理
+</div>
+<div>影评
+    <p>这是一个段落               #p表示段落
+        <span>这是一个重点</span> #span表示重点
+    </p>
+    <p>这是一个段落
+        <span>这是一个重点</span>
+    </p>
+</div>
+<div>相关推荐</div>
+</body>
+<script>
+    id 对应的颜色 为灰色
+</script>
+</html>
+
+id 是用户标识，表示独特的样式、独特的模块，用处很多
+script 表示一个脚本，纯文本的程序，所以不需要用什么符号，打文字即可。浏览器不会读取script标签中的html代码
